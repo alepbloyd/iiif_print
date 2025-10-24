@@ -25,7 +25,7 @@ module IiifPrint
     #   @todo The default of :aark_id is a quick hack for adventist.  By exposing a configuration
     #         value, my hope is that this becomes easier to configure.
     #   @api public
-    class_attribute :parent_work_identifier_property_name, default: 'aark_id'
+    class_attribute :parent_work_identifier_property_name, default: 'id'
 
     ##
     # @!attribute preprocessed_location_adapter_name [r|w]
