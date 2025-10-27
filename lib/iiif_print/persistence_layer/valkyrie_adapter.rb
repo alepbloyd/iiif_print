@@ -145,7 +145,7 @@ module IiifPrint
         # TODO: This creates a hard dependency on Bulkrax because that is where this custom query is defined
         #       Is this adequate?
         Array.wrap(Hyrax.query_service.custom_queries.find_by_model_and_property_value(model: work_type,
-                                                                                     property: :title,
+                                                                                     property: :title_tesim,
                                                                                      value: title))
       end
 
