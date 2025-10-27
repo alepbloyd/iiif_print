@@ -144,7 +144,7 @@ module IiifPrint
         work_type = model.constantize
         # TODO: This creates a hard dependency on Bulkrax because that is where this custom query is defined
         #       Is this adequate?
-        Array.wrap(Hyrax.query_service.custom_query.find_by_model_and_property_value(model: work_type,
+        Array.wrap(Hyrax.query_service.custom_queries.find_by_model_and_property_value(model: work_type,
                                                                                      property: :title,
                                                                                      value: title))
       end
