@@ -46,3 +46,5 @@ module IiifPrint
     end
   end
 end
+
+Hyrax::WorkShowPresenter.prepend(IiifPrint::WorkShowPresenterDecorator)
